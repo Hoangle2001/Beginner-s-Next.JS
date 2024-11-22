@@ -74,7 +74,7 @@ const Nav: React.FC = () => {
             <Link href="/about" className="hover:bg-gray-500 rounded-full px-5 py-2 text_xl">
               About
             </Link>
-            <Link href="/posts" className="hover:bg-gray-500 rounded-full px-5 py-2 text_xl">
+            <Link href="/blog" className="hover:bg-gray-500 rounded-full px-5 py-2 text_xl">
               Post
             </Link>
             <Link href="/contact" className="hover:bg-gray-500 rounded-full px-5 py-2 text_xl">
@@ -131,7 +131,7 @@ const Nav: React.FC = () => {
                 </Link>
               </li>
               <li className="text-xl mb-2 cursor-pointer">
-                <Link href="/posts" onClick={closeMenu}>
+                <Link href="/blog" onClick={closeMenu}>
                   Post
                 </Link>
               </li>

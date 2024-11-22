@@ -1,10 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Cấu hình của bạn
-};
+}
 
 module.exports = {
   images: {
-    domains: ["images.ctfassets.net"],
-  },
-};
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.ctfassets.net',
+        pathname: '/**' // Cho phép tất cả các đường dẫn
+      }
+    ]
+  }
+}

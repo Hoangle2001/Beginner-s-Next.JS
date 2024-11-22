@@ -5,7 +5,7 @@ import { Document } from "contentful";
 
 type HeroProps = {
   title: string;
-  body: Document; // Rich Text từ Contentful
+  body: Document | string; // Có thể là string nếu không phải rich text
   image: string;
 };
 
@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({ title, body, image }) => {
         <h1 className="text-3xl">{title}</h1>
         <hr />
         <div className="mt-10 text-black font-san">
-          {documentToReactComponents(body)}
+          {typeof body === "string" ? body : documentToReactComponents(body)}
         </div>
       </div>
       <div className="w-4/5 flex justify-center ssm:w-fit">
