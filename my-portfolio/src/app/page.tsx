@@ -16,7 +16,7 @@ export default async function Home() {
 
   const hero = response.items[0]?.fields;
   return (
-    <main className="flex flex-col w-full justify-center row-start-2 items-center sm:items-start">
+    <main className="flex flex-col bg-white w-full justify-center row-start-2 items-center sm:items-start">
       <Hero
         title={hero?.title || "Default Title"} // Xử lý khi thiếu dữ liệu
         body={hero?.body || "Default Body"} // Kiểm tra body có kiểu Document hoặc string

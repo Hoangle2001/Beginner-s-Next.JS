@@ -71,7 +71,7 @@ const Nav: React.FC = () => {
         </div>
         <div className="space-x-4">
           <div className="ssm:hidden lg:block space-x-2">
-            <Link href="/about/page.tsx" className="hover:bg-gray-500 rounded-full px-5 py-2 text_xl">
+            <Link href="/about" className="hover:bg-gray-500 rounded-full px-5 py-2 text_xl">
               About
             </Link>
             <Link href="/blog" className="hover:bg-gray-500 rounded-full px-5 py-2 text_xl">
